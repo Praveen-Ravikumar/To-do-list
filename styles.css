@@ -221,6 +221,21 @@ body {
     .ul li {
         font-size: 14px;
     }
+
+    footer{
+        text-align: center;
+        color: white;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .copy{
+        font-family: "Poppins", serif;
+      font-weight: 200;
+      font-style: normal;
+      display: inline;
+    }
 }
 
 footer{
