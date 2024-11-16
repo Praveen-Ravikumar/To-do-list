@@ -165,63 +165,59 @@ body {
     align-items: center;
 }
 
-/* Tablet styles */
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     .to-do {
-        width: 90%;
-        padding: 30px 20px;
-        font-size: 14px;
+        max-width: 400px;
+        margin: 80px auto;
+        padding: 30px 20px 50px;
+    }
+
+    .to-do .h2 {
+        font-size: 24px;
     }
 
     .rows {
         flex-direction: column;
         height: auto;
-        margin-bottom: 15px;
+        padding: 10px;
+        margin-bottom: 20px;
     }
 
     #input-txt {
         margin-bottom: 10px;
-        width: 100%;
+        padding: 10px;
+        font-size: 14px;
     }
 
     .btns {
         width: 100%;
         padding: 10px;
     }
-}
-
-/* Mobile styles */
-@media (max-width: 480px) {
-    .to-do {
-        width: 95%;
-        padding: 20px 10px;
-        font-size: 12px;
-    }
-
-    .rows {
-        flex-direction: column;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    #input-txt {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    .btns {
-        width: 100%;
-        padding: 8px;
-    }
 
     .ul li {
         font-size: 16px;
+        padding: 10px 8px 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .to-do {
+        max-width: 320px;
+        margin: 60px auto;
+        padding: 20px 15px 40px;
     }
 
-    .ul li span {
+    .to-do .h2 {
         font-size: 20px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+    }
+
+    .btns {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .ul li {
+        font-size: 14px;
     }
 }
