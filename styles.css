@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+    background: rgb(58,16,120);
+    background: linear-gradient(119deg, rgba(58,16,120,1) 11%, rgba(78,49,170,1) 37%, rgba(55,149,189,1) 67%, rgba(22,27,49,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* before the 3lines of code the background is repeated when the task is added more tha 100vh
+    
+/* 3A1078
+4E31AA 
+3795BD
+F7F7F8*/
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.to-do{
+    color: white;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    /* text-align: center; */
+    font-family:sans-serif, serif;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    /* border: 1px solid gray; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.to-do .h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    height: 50px;
+    background-color: #F7F7F8;
+}
+
+#input-txt{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    font-weight: 14px;
+
+}
+
+.btns{
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #3A1078;
+    cursor: pointer;
+}
+
+.ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 0px;
+    user-select: none;
+    cursor: pointer;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* above two lines help to set the task inside the list-container  */
+    
+}
+
+#list-container{
+    position: relative;
+}
+
+.ul li::before{
+    content: "\F28A";
+    position: relative;
+    font-family: 'bootstrap-icons';
+    margin: 12px 10px 0 8px;
+    text-align: center;
+    top: 5px;
+}
+
+.ul .checked{
+    color: #bcbcbc;
+    text-decoration: line-through;  
+}
+
+.ul .checked::before{
+    content: "\F26A";
+}
+
+.ul li span{
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    /* top: 5px; */
+    border-radius: 50%;
+}
+
+.ul li span:hover{
+    background-color: rgb(255, 58, 58);
+   
+}
