@@ -78,6 +78,7 @@ F7F7F8*/
     border: none;
     outline: none;
     background: transparent;
+    border-radius: 30px;
     /* backdrop-filter: blur(30px); */
     font-weight: 14px;
 
