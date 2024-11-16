@@ -146,3 +146,82 @@ F7F7F8*/
     background-color: rgb(255, 58, 58);
    
 }
+
+
+
+/* Default styles (for desktops) */
+
+body {
+    background: rgb(58,16,120);
+    background: linear-gradient(119deg, rgba(58,16,120,1) 11%, rgba(78,49,170,1) 37%, rgba(55,149,189,1) 67%, rgba(22,27,49,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .to-do {
+        width: 90%;
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+
+    .rows {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    #input-txt {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .btns {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .to-do {
+        width: 95%;
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+
+    .rows {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #input-txt {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .btns {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .ul li {
+        font-size: 16px;
+    }
+
+    .ul li span {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}
